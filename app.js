@@ -7,10 +7,9 @@ Write a function called sum() that takes in two numbers as arguments and then re
 
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
-// Write your code here
 function sum(a, b) { //eslint-disable-line
-    let sumResult =a+b;
-    return [sumResult,'The sum of 4 and 7 is 11.'];
+let output = a + b
+return [output, `The sum of ${a} and ${b} is ${output}.`]
 }
  
 
@@ -29,8 +28,8 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-let output = a *b;
-return[output, 'The product of 5 and 9 is 45.'];
+let out = a * b
+return [out, `The product of ${a} and ${b} is ${out}.`]
 }
 
 // Here is the test for multiply(); uncomment it to run it
@@ -51,11 +50,12 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function sumAndMultiply(a, b, c) { //eslint-disable-line
-    let sum=a+ b + c ;
-    multiply = a * b * c ;
-return[sum ,multiply, '4 and 7 and 5 sum to 16.', 'The product of 4 and 7 and 5 is 140.'];
+    let sumAb = sum(a,b)[0];
+    let sumAbc = sum(sumAb,c)[0];
+    let multAb = multiply(a,b)[0];
+    let multAbc = multiply(multAb,c)[0];
+    return [sumAbc , multAbc ,`${a} and ${b} and ${c} sum to ${sumAbc}.` ,`The product of ${a} and ${b} and ${c} is ${multAbc}.` ]
 }
-
 // Here is the test for sumAndMultiply(); uncomment it to run it
  testSumAndMultiply(4,7,5);
 
