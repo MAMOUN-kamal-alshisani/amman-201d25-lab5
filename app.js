@@ -123,4 +123,4 @@ return [mult4, 'The numbers 1,2,3,4,5 have a product of 120.']
 testMultiplyAnyArray(testDynamicArray);
 
 // Once you get the test passing, do an a-c-p cycle and synchronize the code between GitHub and your laptop. You're done! Submit the link to the repo following the instructions in Canvas.
-© 2021 GitHub, Inc.
+
