@@ -8,12 +8,11 @@ Write a function called sum() that takes in two numbers as arguments and then re
 Test this function by hand in the console to get it working, and when you think it is finished, uncomment the call for the testSum() function below and check the console to see if the test passes.*/
 
 // Write your code here
+// Write your code here
 function sum(a, b) { //eslint-disable-line
-    let sumResult =a+b;
-    return [sumResult,'The sum of 4 and 7 is 11.'];
+let output = a + b
+return [output, `The sum of ${a} and ${b} is ${output}.`]
 }
- 
-
 // Here is the test for sum(); uncomment it to run it
 testSum(4, 7);
 
@@ -29,10 +28,9 @@ Test this function by hand in the console to get it working, and when you think 
 
 // Write your code here
 function multiply(a, b) { //eslint-disable-line
-let output = a *b;
-return[output, 'The product of 5 and 9 is 45.']
+let multi = a * b
+return [multi, `The product of ${a} and ${b} is ${multi}.`]
 }
-
 // Here is the test for multiply(); uncomment it to run it
  testMultiply(5,9);
 
